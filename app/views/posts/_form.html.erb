@@ -1,0 +1,12 @@
+<%= form_for @post do |f| %>
+  
+  <% if @post.errors.any? %>
+    Teste
+  <% end %>
+
+  Title: <%= f.text_field :title %>
+  <%= f.text_field :content %>
+  <%= f.check_box :published %>
+
+  <%= f.submit %>
+<% end %>
